@@ -2,7 +2,7 @@
 template: post
 title: Hello world
 slug: hellow-world
-draft: true
+draft: false
 date: 2020-07-22T12:31:43.760Z
 description: "Hello world "
 category: hello world
