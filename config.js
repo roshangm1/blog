@@ -19,10 +19,7 @@ module.exports = {
       label: 'About me',
       path: '/pages/about'
     },
-    {
-      label: 'Contact me',
-      path: '/pages/contacts'
-    }
+  
   ],
   author: {
     name: 'Roshan Gautam  ',
@@ -31,12 +28,12 @@ module.exports = {
     contacts: {
       email: 'roosan.gm@gmail.com',
       facebook: '',
-      telegram: 'https://t.me/roshangm1',
-      twitter: 'https://twitter.com/roshangautam0',
-      github: 'https://github.com/roshangm1/',
+      telegram: 'roshangm1',
+      twitter: 'roshangautam0',
+      github: 'roshangm1',
       rss: '',
       vkontakte: '',
-      linkedin: 'https://www.linkedin.com/in/gautamroshan/',
+      linkedin: 'gautamroshan',
       instagram: '',
       line: '',
       gitlab: '',

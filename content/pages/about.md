@@ -2,6 +2,8 @@
 template: page
 title: About me
 slug: about
+socialImage: "/media/image-4.jpg"
+
 draft: false
 ---
 Hi! I am a software engineer and co-founder at Brainants Technology. It's a software company based on Kathmandu, Nepal.
