@@ -20,6 +20,14 @@
 .switch input {
   display: none;
 }
+.switch__container {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+.switch__text {
+  font-size: 16px;
+}
 
 .slider {
   position: absolute;
