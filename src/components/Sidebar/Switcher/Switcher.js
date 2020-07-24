@@ -12,9 +12,9 @@ const Switcher = () => {
       )
     );
   }, []);
-  const bodyEl = document.getElementsByTagName("body")[0];
 
   function turnDarkMode() {
+    const bodyEl = document.getElementsByTagName("body")[0];
     setIsDarkModeOn(!isDarkModeOn);
     if (window) {
       isDarkModeOn
