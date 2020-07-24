@@ -1,21 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Switcher.module.scss";
 
 const Switcher = () => {
-  const [isDarkModeOn, setIsDarkModeOn] = useState(
-    !!(
-      window.localStorage.getItem("darkMode") ||
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-    )
-  );
+  const [isDarkModeOn, setIsDarkModeOn] = useState(true);
+
+  useEffect(() => {
+    setIsDarkModeOn(
+      !!(
+        window.localStorage.getItem("darkMode") ||
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+      )
+    );
+  }, []);
   const bodyEl = document.getElementsByTagName("body")[0];
 
   function turnDarkMode() {
     setIsDarkModeOn(!isDarkModeOn);
-    isDarkModeOn
-      ? bodyEl.classList.add("dark")
-      : bodyEl.classList.remove("dark");
-    window.localStorage.setItem("darkMode", isDarkModeOn);
+    if (window) {
+      isDarkModeOn
+        ? bodyEl.classList.add("dark")
+        : bodyEl.classList.remove("dark");
+      window.localStorage.setItem("darkMode", isDarkModeOn);
+    }
   }
 
   return (
