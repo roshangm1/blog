@@ -4,6 +4,7 @@ import Helmet from "react-helmet";
 import { withPrefix } from "gatsby";
 import type { Node as ReactNode } from "react";
 import { useSiteMetadata } from "../../hooks";
+
 import styles from "./Layout.module.scss";
 
 type Props = {
@@ -31,6 +32,7 @@ const Layout = ({ children, title, description, socialImage }: Props) => {
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={metaImageUrl} />
       </Helmet>
+
       {children}
     </div>
   );

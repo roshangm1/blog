@@ -1,46 +1,37 @@
 import React, { useState, useEffect } from "react";
+import DarkModeToggle from "react-dark-mode-toggle";
 import styles from "./Switcher.module.scss";
 
 const Switcher = () => {
   const [isDarkModeOn, setIsDarkModeOn] = useState(true);
 
   useEffect(() => {
-    setIsDarkModeOn(
-      !!(
-        window.localStorage.getItem("darkMode") ||
-        window.matchMedia("(prefers-color-scheme: dark)").matches
-      )
-    );
+    const dark = window.localStorage.getItem("darkMode");
+    setIsDarkModeOn(dark ? JSON.parse(dark) : true);
   }, []);
-
-  function turnDarkMode() {
-    setIsDarkModeOn((prevMode) => !prevMode);
-  }
 
   useEffect(() => {
     const bodyEl = document.getElementsByTagName("body")[0];
-
-    if (window) {
-      isDarkModeOn
-        ? bodyEl.classList.add("dark")
-        : bodyEl.classList.remove("dark");
-      window.localStorage.setItem("darkMode", isDarkModeOn);
-    }
+    isDarkModeOn === true
+      ? bodyEl.classList.add("dark")
+      : bodyEl.classList.remove("dark");
   }, [isDarkModeOn]);
+
+  function setIsDarkMode(value) {
+    const bodyEl = document.getElementsByTagName("body")[0];
+    setIsDarkModeOn(value);
+    value ? bodyEl.classList.add("dark") : bodyEl.classList.remove("dark");
+    window.localStorage.setItem("darkMode", value);
+  }
+
   return (
     <div className={styles["switch__container"]}>
-      <span className={styles["switch__text"]}>Night Mode</span>
-      <label className={styles["switch"]}>
-        <input
-          id="DarkModeSwitcher"
-          type="checkbox"
-          defaultChecked={isDarkModeOn}
-        />
-        <span
-          className={`${styles["slider"]}`}
-          onClick={() => turnDarkMode()}
-        />
-      </label>
+      <DarkModeToggle
+        onChange={setIsDarkMode}
+        checked={isDarkModeOn}
+        size={50}
+        speed={2}
+      />
     </div>
   );
 };
