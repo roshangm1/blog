@@ -2,7 +2,7 @@
 template: post
 title: Hello World Once Again
 slug: hello-world
-draft: true
+draft: false
 date: 2020-07-22T12:31:43.760Z
 description: >+
   It's been a long overdue. But finally I decided to get back to the place where
