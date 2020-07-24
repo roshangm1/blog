@@ -20,7 +20,6 @@ During my early days in my career, I used to write a lot. I used to write about 
 
 Anyway, now I am trying to pull myself togther. Just to give heads up, in coming days, I will be writing about different technical topics ranging from begineer to ***research oriented***, probably some career tips for the absolute begineers and maybe some of my own boring philosohpies.
 
-Ooh, it's time to `reset --HARD`. 
+It's time to `reset --HARD`. See you in the next blog
 
-Thanks for reading! See you in the next blog.
-
+Thanks for reading!
