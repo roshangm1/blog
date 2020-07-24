@@ -14,16 +14,19 @@ const Switcher = () => {
   }, []);
 
   function turnDarkMode() {
+    setIsDarkModeOn((prevMode) => !prevMode);
+  }
+
+  useEffect(() => {
     const bodyEl = document.getElementsByTagName("body")[0];
-    setIsDarkModeOn(!isDarkModeOn);
+
     if (window) {
       isDarkModeOn
         ? bodyEl.classList.add("dark")
         : bodyEl.classList.remove("dark");
       window.localStorage.setItem("darkMode", isDarkModeOn);
     }
-  }
-
+  }, [isDarkModeOn]);
   return (
     <div className={styles["switch__container"]}>
       <span className={styles["switch__text"]}>Night Mode</span>
@@ -31,7 +34,7 @@ const Switcher = () => {
         <input
           id="DarkModeSwitcher"
           type="checkbox"
-          defaultChecked={!isDarkModeOn}
+          defaultChecked={isDarkModeOn}
         />
         <span
           className={`${styles["slider"]}`}

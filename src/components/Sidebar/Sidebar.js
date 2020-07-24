@@ -22,7 +22,7 @@ const Sidebar = ({ isIndex }: Props) => {
     <div className={styles["sidebar"]}>
       <div className={styles["sidebar__inner"]}>
         <Author author={author} isIndex={isIndex} />
-        {darkFunctionalityIsOn ? <Switcher /> : null}
+        <Switcher />
         <Menu menu={menu} />
         <Contacts contacts={author.contacts} />
         <Copyright copyright={copyright} />

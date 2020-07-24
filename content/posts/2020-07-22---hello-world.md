@@ -9,16 +9,17 @@ description: >+
   I sued to write as soon as I stumble upon something interesting or something
   challenging. 
 
-category: Hello
+category: introduction
 tags:
   - introduction
   - non-tech
 ---
-It's been a long overdue. But finally I decided to get back to the place where I sued to write as soon as I stumble upon something interesting or something challenging. 
 
-During my early days in my career, I used to write a lot. I used to write about the tech topics that I found fascinating. For instance, content of my topics used to be like "how to format a PC ?", "how can you customize your linux distro?", "tips and tricks in Windows XP", etc. But as I grew more, this beautiful habit grew less. Of course, because of more work, more pressure but mostly because of less motivations and more laziness. 
+It's been a long overdue. But finally I decided to get back to the place where I sued to write as soon as I stumble upon something interesting or something challenging.
 
-Anyway, now I am trying to pull myself together. Just to give heads up, in coming days, I will be writing about different technical topics ranging from beginner to ***research oriented***, probably some career tips for the absolute beginners and maybe some of my own boring philosophies.
+During my early days in my career, I used to write a lot. I used to write about the tech topics that I found fascinating. For instance, content of my topics used to be like "how to format a PC ?", "how can you customize your linux distro?", "tips and tricks in Windows XP", etc. But as I grew more, this beautiful habit grew less. Of course, because of more work, more pressure but mostly because of less motivations and more laziness.
+
+Anyway, now I am trying to pull myself together. Just to give heads up, in coming days, I will be writing about different technical topics ranging from beginner to **_research oriented_**, probably some career tips for the absolute beginners and maybe some of my own boring philosophies.
 
 It's time to `reset --HARD`. See you in the next blog
 
