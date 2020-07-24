@@ -10,6 +10,7 @@ module.exports = {
   disqusShortname: "",
   postsPerPage: 4,
   googleAnalyticsId: "",
+  darkFunctionalityIsOn: true,
   useKatex: false,
   menu: [
     {
