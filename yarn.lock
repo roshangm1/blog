@@ -8234,6 +8234,14 @@ gatsby-plugin-typescript@^2.4.15:
     "@babel/runtime" "^7.10.3"
     babel-plugin-remove-graphql-queries "^2.9.14"
 
+gatsby-plugin-web-monetization@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-web-monetization/-/gatsby-plugin-web-monetization-1.0.1.tgz#7a3ecddd044e76d7920520298871ba7ae4ddf532"
+  integrity sha512-BQNLpF1zOs5HaWnNnHDXZren7OKBOpTkSXtjIxIo+h9YTOl+7hvE0i77Zrx89C8rabMnlkZwxCqLqDjdxU/BOw==
+  dependencies:
+    "@babel/runtime" "^7.6.3"
+    react "^16.10.2"
+
 gatsby-react-router-scroll@^3.0.12:
   version "3.0.12"
   resolved "https://registry.yarnpkg.com/gatsby-react-router-scroll/-/gatsby-react-router-scroll-3.0.12.tgz#1c6a7c3fd2d54ec618f42a6e793ff8293070b6bc"
@@ -15292,7 +15300,7 @@ react-window@^1.8.5:
     "@babel/runtime" "^7.0.0"
     memoize-one ">=3.1.1 <6"
 
-react@^16.13.1:
+react@^16.10.2, react@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react/-/react-16.13.1.tgz#2e818822f1a9743122c063d6410d85c1e3afe48e"
   integrity sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w==
