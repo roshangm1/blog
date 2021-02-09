@@ -5,7 +5,7 @@ module.exports = {
   pathPrefix: "/",
   title: "Blog by Roshan Gautam",
   subtitle:
-    "Software Engineer & Co-founder at Brainants Technology. Expertise is React, React Native. Enthusiasts in backends - Servers, Machine Learning.",
+    "Senior Software Engineer at LogMeIn Germany. Expertise is React, React Native. Enthusiasts in backends - Servers, Machine Learning.",
   copyright: "© All rights reserved.",
   disqusShortname: "",
   postsPerPage: 4,
@@ -26,9 +26,9 @@ module.exports = {
     name: "Roshan Gautam  ",
     photo: "/photo.jpg",
     bio:
-      "Software Engineer & Co-founder at Brainants Technology. Expertise is React, React Native. Enthusiasts in server, machine learning.",
+      "Senior Software Engineer at LogMeIn Germany. Expertise is React, React Native. Enthusiasts in server, machine learning.",
     contacts: {
-      email: "roosan.gm@gmail.com",
+      email: "roshangm01@gmail.com",
       facebook: "",
       telegram: "roshangm1",
       twitter: "roshangautam0",
