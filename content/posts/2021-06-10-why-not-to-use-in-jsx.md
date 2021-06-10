@@ -2,7 +2,7 @@
 template: post
 title: Why not to use `&&` in JSX ?
 slug: why-not-use-&&-jsx
-draft: true
+draft: false
 date: 2021-06-10T20:20:29.004Z
 description: Using `&&` instead of good old ternary operator in JSX is not
   actually a very clever idea. It might result in unexpected behavior in your
