@@ -17,6 +17,11 @@ tags:
   - tips
 ---
 
+
+
+
+![Mardi Himal Base Camp](/media/sanjay-hona-2q2dpvpy6xu-unsplash.jpeg =x350)
+
 It's generally a good practice to write fewer lines of code for a feature in a project and this is somehow part of the clean code momentum. Because of this, we tend to use shorthand operators like `&&`, `||` for checking certain conditions in javascript. For example
 
 HelloWorld.jsx
@@ -71,7 +76,7 @@ In react native, this will actually result in hard crash which looks like this: 
 \
 ![](https://i.stack.imgur.com/KXWS9.jpg)\
 \
-**_Solution?_**\
+***Solution?***\
 \
 Personally, I almost always try to avoid using `&&` operator while comparing things in JSX. I prefer using ternary operators `? :` instead. Unlike `&&` operator, ternary operators do not increase the cognitive complexity of the code as the only purpose of ternary operators is to compare two values. I find it more readable and concise. \
 \
