@@ -21,59 +21,48 @@ It's generally a good practice to write fewer lines of code for a feature in a p
 
 HelloWorld.jsx
 
-```
-const HelloWorld = ({name}) => {
-  return name &&
-    (
-      <Text>Hello World ${name}</Text>
-    )
-}
+```javascript
+const HelloWorld = ({ name }) => {
+  return name && <Text>Hello World ${name}</Text>;
+};
 ```
 
 Main.jsx
 
-```
+```javascript
 const name = "roshan";
 
-return <HelloWorld name={name} />
-
+return <HelloWorld name={name} />;
 ```
 
 It looks like a perfect block of code, doesn't it ? It actually is. It takes less lines of code and looks clean but what happens if something goes wrong and `name` prop that we are sending to `HelloWorld` component is empty (`""`) ?\
 \
 Before answering the question, let me just mention a very basic idea on how comparison works in javascript.
 
-```
-"" && true // ""
-true && "" // ""
-false && true // false
-
+```javascript
+"" && true; // ""
+true && ""; // ""
+false && true; // false
 ```
 
 As you can see here, `&&` is a boolean operator which returns the value of a falsy one when both operands aren't truthy.\
 \
 Let's revisit the above code with slight modification i.e `name` is now empty instead of proper value.
 
-```
-
-
-const HelloWorld = ({name}) => {
-  return name &&
-    (
-      <Text>Hello World ${name}</Text>
-    )
-}
+```javascript
+const HelloWorld = ({ name }) => {
+  return name && <Text>Hello World ${name}</Text>;
+};
 
 const name = "";
 
-return <HelloWorld name={name} />
+return <HelloWorld name={name} />;
 ```
 
 Now, return part of the `HelloWorld` component will now look like:
 
-```
-return "" && <Text>Hello World ${name}</Text>
-
+```javascript
+return "" && <Text>Hello World ${name}</Text>;
 ```
 
 and according the basic comparison principle that I mentioned above, the output would be the falsy part of the comparison which is `""`. This is not what we wanted to return, right ? `""` is not even a valid component.\
@@ -88,16 +77,14 @@ Personally, I almost always try to avoid using `&&` operator while comparing thi
 \
 But if you insist in using `&&` , then I would recommend you to wrap the variable (`name` in this case) with `Boolean` or use double negation `!!` to cast it to boolean value.
 
-```
-
-Boolean(name) && <Text>Hello World \${name}</Text>
-
+```javascript
+Boolean(name) && <Text>Hello World \${name}</Text>;
 ```
 
 OR
 
-```
-!!name && <Text>Hello World \${name}</Text>
+```javascript
+!!name && <Text>Hello World \${name}</Text>;
 ```
 
 I hope you find this article helpful. See you in the next one. \
