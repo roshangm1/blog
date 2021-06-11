@@ -16,10 +16,10 @@ tags:
   - react-native
   - tips
 ---
-<img src="https://images.unsplash.com/photo-1571401835393-8c5f35328320?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3667&q=80" width="100%"  height="400px" style="object-fit: contain" alt="Mardi Himal">
-<center>Photo by[ Sanjay Hona](https://unsplash.com/photos/2Q2dpVPY6XU)</center>
 
-<br>
+<img src="https://images.unsplash.com/photo-1571401835393-8c5f35328320?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3667&q=80" width="100%"  height="400px" style="object-fit: contain" alt="Mardi Himal" />
+
+<center>Photo by <a href="https://unsplash.com/photos/2Q2dpVPY6XU">Sanjay Hona</a></center>
 
 It's generally a good practice to write fewer lines of code for a feature in a project and this is somehow part of the clean code momentum. Because of this, we tend to use shorthand operators like `&&`, `||` for checking certain conditions in javascript. For example
 
@@ -75,7 +75,7 @@ In react native, this will actually result in hard crash which looks like this: 
 \
 ![](https://i.stack.imgur.com/KXWS9.jpg)\
 \
-***Solution?***\
+**_Solution?_**\
 \
 Personally, I almost always try to avoid using `&&` operator while comparing things in JSX. I prefer using ternary operators `? :` instead. Unlike `&&` operator, ternary operators do not increase the cognitive complexity of the code as the only purpose of ternary operators is to compare two values. I find it more readable and concise. \
 \
