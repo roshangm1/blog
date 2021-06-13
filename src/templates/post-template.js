@@ -1,6 +1,6 @@
 // @flow strict
-import React from 'react';
 import { graphql } from 'gatsby';
+import React from 'react';
 import Layout from '../components/Layout';
 import Post from '../components/Post';
 import { useSiteMetadata } from '../hooks';
@@ -13,7 +13,8 @@ type Props = {
 };
 
 const PostTemplate = ({ data }: Props) => {
-  const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
+  const { title: siteTitle, subtitle: siteSubtitle, url } = useSiteMetadata();
+
   const { frontmatter } = data.markdownRemark;
   const {
     title: postTitle,
@@ -29,7 +30,7 @@ const PostTemplate = ({ data }: Props) => {
       description={metaDescription}
       socialImage={socialImage}
     >
-      <Post post={data.markdownRemark} />
+      <Post post={data.markdownRemark} url={url} />
     </Layout>
   );
 };

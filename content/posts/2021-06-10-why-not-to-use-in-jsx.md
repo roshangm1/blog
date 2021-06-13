@@ -6,8 +6,7 @@ draft: false
 date: 2021-06-10T20:20:29.004Z
 description: Using `&&` instead of good old ternary operator in JSX is not
   actually a very clever idea. It might result in unexpected behavior in your
-  application and even a crash if it's react native. This will be short and
-  sweet blog talking about it with some examples.
+  application and even a crash if it's react native.
 category: blog
 tags:
   - javascript
