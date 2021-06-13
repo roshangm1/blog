@@ -15,11 +15,12 @@ tags:
   - ternary operators
   - react-native
   - tips
+socialImage: https://images.unsplash.com/photo-1571401835393-8c5f35328320?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3667&q=80
 ---
 
 <img src="https://images.unsplash.com/photo-1571401835393-8c5f35328320?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3667&q=80" width="100%"  height="400px" style="object-fit: contain" alt="Mardi Himal" />
 
-<center>Photo by <a href="https://unsplash.com/photos/2Q2dpVPY6XU">Sanjay Hona</a></center>
+<center>Mardi Basecamp by <a href="https://unsplash.com/photos/2Q2dpVPY6XU">Sanjay Hona</a></center>
 
 It's generally a good practice to write fewer lines of code for a feature in a project and this is somehow part of the clean code momentum. Because of this, we tend to use shorthand operators like `&&`, `||` for checking certain conditions in javascript. For example
 
@@ -34,7 +35,7 @@ const HelloWorld = ({ name }) => {
 Main.jsx
 
 ```javascript
-const name = "roshan";
+const name = 'roshan';
 
 return <HelloWorld name={name} />;
 ```
@@ -44,8 +45,8 @@ It looks like a perfect block of code, doesn't it ? It actually is. It takes les
 Before answering the question, let me just mention a very basic idea on how comparison works in javascript.
 
 ```javascript
-"" && true; // ""
-true && ""; // ""
+'' && true; // ""
+true && ''; // ""
 false && true; // false
 ```
 
@@ -58,7 +59,7 @@ const HelloWorld = ({ name }) => {
   return name && <Text>Hello World ${name}</Text>;
 };
 
-const name = "";
+const name = '';
 
 return <HelloWorld name={name} />;
 ```
@@ -66,7 +67,7 @@ return <HelloWorld name={name} />;
 Now, return part of the `HelloWorld` component will now look like:
 
 ```javascript
-return "" && <Text>Hello World ${name}</Text>;
+return '' && <Text>Hello World ${name}</Text>;
 ```
 
 and according the basic comparison principle that I mentioned above, the output would be the falsy part of the comparison which is `""`. This is not what we wanted to return, right ? `""` is not even a valid component.\
