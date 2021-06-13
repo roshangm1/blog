@@ -15,9 +15,10 @@ type Props = {
 
 const Layout = ({ children, title, description, socialImage }: Props) => {
   const { author, url } = useSiteMetadata();
-  const metaImage = socialImage != null ? socialImage : author.photo;
-  const metaImageUrl = url + withPrefix(metaImage);
+  const metaImageUrl =
+    socialImage != null ? socialImage : url + withPrefix(author.photo);
 
+  console.log('m', metaImageUrl);
   return (
     <div className={styles.layout}>
       <Helmet>
