@@ -77,7 +77,7 @@ In react native, this will actually result in hard crash which looks like this: 
 \
 **_Solution?_**\
 \
-Personally, I almost always try to avoid using `&&` operator while comparing things in JSX. I prefer using ternary operators `? :` instead. Unlike `&&` operator, ternary operators do not increase the cognitive complexity of the code as the only purpose of ternary operators is to compare two values. I find it more readable and concise. \
+Personally, I almost always try to avoid using `&&` operator while comparing things in JSX. I prefer using ternary operators `? :` instead. Unlike `&&` operator, ternary operators do not increase the cognitive complexity of the code as the only purpose of ternary operators is to compare two values. I find it more readable and concise. Having said that, if the number of lines for the increases, I prefer to extract the jsx into a function and use `if` statements.\
 \
 But if you insist in using `&&` , then I would recommend you to wrap the variable (`name` in this case) with `Boolean` or use double negation `!!` to cast it to boolean value.
 
@@ -90,6 +90,9 @@ OR
 ```javascript
 !!name && <Text>Hello World \${name}</Text>;
 ```
+
+To try:
+https://snack.expo.io/@roshangm1/dfc23e
 
 I hope you find this article helpful. See you in the next one. \
 Keep learning!
