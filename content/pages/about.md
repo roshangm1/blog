@@ -5,7 +5,7 @@ slug: about
 socialImage: /media/image-4.jpg
 draft: false
 ---
-Hi! I am working as a Senior Software Engineer at LogMeIn Germany where I mostly work with React Native and the ecosystem.
+Hi! I am working as a Senior React Native Engineer in London, UK.
 
 I have expertise with Javascript, React & React Native to be more exact. I love open source and I try to contribute back.
 
@@ -15,4 +15,6 @@ I believe in community and love to organize and participate in meetups, conferen
 
 I believe in team work and love working with the motivated people. 
 
-Moreover, I like football, love to travel/hike.
+Moreover, I like football, love to travel/hike.\
+\
+I﻿ am currently working on a forum like community app called KaamKotha UK. This is an app for Nepalese community living in UK. If you want to try it, here is the [link](https://kaamkotha.co.uk/)
