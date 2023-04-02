@@ -5,7 +5,7 @@ module.exports = {
   pathPrefix: "/",
   title: "Blog by Roshan Gautam",
   subtitle:
-    "Senior Software Engineer at LogMeIn Germany. Expertise is React, React Native. Enthusiasts in backends - Servers, Machine Learning.",
+    "Senior React Native Engineer based in UK. Expertise is React, React Native. Enthusiasts in backends - Servers, Machine Learning.",
   copyright: "© All rights reserved.",
   disqusShortname: "",
   postsPerPage: 4,
@@ -26,7 +26,7 @@ module.exports = {
     name: "Roshan Gautam  ",
     photo: "/photo.jpg",
     bio:
-      "Senior Software Engineer at LogMeIn Germany. Expertise is React, React Native. Enthusiasts in server, machine learning.",
+      "Senior React Native Engineer based in UK. Expertise is React, React Native. Enthusiasts in server, machine learning.",
     contacts: {
       email: "roshangm01@gmail.com",
       facebook: "",
